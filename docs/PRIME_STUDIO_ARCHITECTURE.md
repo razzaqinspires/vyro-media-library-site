@@ -1,27 +1,46 @@
-# VYRO MEDIA Prime Studio — Architecture v2.0
+# VYRO MEDIA Prime Studio — Architecture 3.0
 
-## Website boundary
-The public website is a Vite front end plus thin Vercel API proxy functions. It does not embed AI model code, voice model weights, FFmpeg, the Instagram publisher, or the scheduler. The seven component repositories remain independent.
+## Public website boundary
+The website is a Vite front end plus thin Vercel API proxy functions. It does not embed Python component source, AI model weights, VoxCPM model files, FFmpeg binaries, database internals, Instagram publishing, or scheduler implementation. Each service stays in its own repository and is called through server-side environment URLs and service keys.
 
 ## Website-connected components
-1. `vyro-script-intake`: normalize and validate incoming briefs.
-2. `vyro-ai-content-engine`: create structured ContentPackage JSON.
-3. `vyro-ai-voice-studio`: synthesize audio only from a server-configured voice profile with explicit rights confirmation.
-4. `vyro-video-render-engine`: produce reviewed 1080x1920 MP4 masters.
+1. `vyro-script-intake`: validates and normalizes structured content briefs.
+2. `vyro-ai-content-engine`: creates hooks, narration, visual prompts, storyboards, caption, and review flags. Optional AI images are exposed through the same service API.
+3. `vyro-ai-voice-studio`: synthesizes WAV narration from a configured voice profile with explicit rights confirmation.
+4. `vyro-video-render-engine`: accepts demo-scoped assets and produces MP4 masters after a human approval gate.
 
-## Internal-only components
-- `vyro-publishing-scheduler`: persistent queue and scheduling state.
-- `vyro-instagram-publisher`: official Meta API publication.
-Neither is called from the public demo website. Publishing must remain an explicit, separately authorized operator workflow.
+## Explicitly disconnected from the website
+- `vyro-instagram-publisher`: operator-only Instagram publishing component.
+- `vyro-publishing-scheduler`: internal publishing queue and scheduling component.
+
+The public Studio Demo must not contain a button, API call, credential, proxy, or direct route to either publishing repository. Instagram publication is a separately authorized operator process.
 
 ## Demo identity and drafts
-The demo creates a random browser-local ID. Project metadata and uploaded media blobs are stored in IndexedDB; the ID is stored in localStorage. This is not authentication, not a cloud account, and not cross-device sync. Clearing browser storage can erase the demo projects.
+No Google OAuth or real account is enabled. A browser-local ID is created with the `VYRO-DEMO-` prefix. The ID is retained in `localStorage`; projects and uploaded media blobs are stored in IndexedDB. Project drafts are local to the browser profile and are not synced across devices. Clearing browser data may remove the demo content. The ID is a namespace, not a verified identity or secure login. Browser export stores a maximum of 12 MiB raw attachments to keep the resulting JSON/base64 file under the 20 MiB import limit.
 
-## Editing
-Photo editing is client-side canvas processing with PNG export. Video editing is experimental browser MediaRecorder output (WebM where supported). Final MP4 rendering is delegated to the separate Render Engine API and requires a human-approved ContentPackage. Selected library images, local image uploads, and a generated WAV can be forwarded to the Render Engine through the server-side proxy; the demo proxy caps each forwarded file at 3 MB to stay within typical serverless request limits.
+The website API proxies validate the demo ID, apply best-effort in-memory per-IP/per-route request limits, keep service keys server-side, and forward demo IDs to media-producing services. The Python services derive private namespaces from demo IDs and apply TTL cleanup. This is adequate for a limited demo, not a substitute for production authentication, durable rate limiting, authorization, or object-storage policy.
 
-## API configuration
-Configure Vercel server-side environment variables from `.env.example`. Local Vite mode provides the browser demo only; use `vercel dev` to execute API proxy functions locally. Do not use `VITE_` for secret keys. Each Python service requires a unique `VYRO_SERVICE_API_KEY`; the matching key is held only by the Vercel proxy environment. Use HTTPS between proxy and services.
+## Media access and permissions
+The project UI offers opt-in library-asset selections and local file uploads. Uploaded files require the user's rights confirmation before Render forwarding. These choices control what that browser demo sends to the Render service for the current project. They do not create cross-user collaboration or server-managed ACLs. Multi-user sharing requires authenticated accounts and a durable authorization backend in a later phase.
 
-## Media access
-Library asset access is opt-in per project in the demo UI. Uploaded media remains in the current browser profile. No private file is shared with another visitor. Actual multi-user asset grants require a future authenticated backend and object storage.
+## Editing and AI tools
+- Photo editor: browser canvas, brightness/contrast/saturation, text overlay, PNG export.
+- Video editor: preview, trim, text overlay, browser `MediaRecorder` WebM export where supported. This is experimental and device/browser codecs differ. The server render pipeline currently composes approved still-image scenes and WAV narration; full arbitrary multi-track video editing is not part of this release.
+- AI content: Script Intake → AI Content Engine; generated content always requires human review.
+- AI image: optional Image API adapter in the AI Content Engine; image API credentials remain on the service, not in browser JavaScript.
+- AI voice: Voice Studio profile must exist on the server and the user must confirm rights; listen to the complete WAV before rendering.
+- Final render: browser forwards only permitted images and voiceover to the separate Render Engine. Final MP4 output uses FFmpeg server-side.
+
+## Environment configuration
+Set server-side Vercel variables from `.env.example`: four service URLs and four matching service keys. Production service URLs must use HTTPS. Never expose these secrets through `VITE_` variables.
+
+Vite dev mode runs the browser-local parts. Use `vercel dev` to run the Vercel API proxies locally. The Studio Demo shows a service-not-configured error until the backend URLs/keys are configured.
+
+## Demo retention
+- Browser drafts: stale projects are removed after 30 days when the demo initializes; the user can delete a project sooner.
+- AI image artifacts: service-side TTL (default 48 hours).
+- Voice artifacts: service-side TTL (default 48 hours).
+- Render assets: service-side TTL (default 48 hours).
+- Render outputs: service-side TTL (default 72 hours).
+
+Retention periods are configurable server-side. They are experimental demo settings and must be reviewed before production scale.

@@ -1,9 +1,15 @@
+import { guardDemo, relayJson, serviceConfig } from "../../server/api-guard.js";
 export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
-  const target = process.env.VYRO_RENDER_API_URL, key = process.env.VYRO_RENDER_API_KEY;
-  if (!target || !key) return res.status(503).json({ error: "Render service not configured" });
+  const demoId = guardDemo(req, res, { limit: 40, windowMs: 60_000, bodyLimit: 4 * 1024 * 1024 });
+  if (!demoId) return;
+  const target = serviceConfig("VYRO_RENDER_API_URL", "VYRO_RENDER_API_KEY");
+  if (!target) return res.status(503).json({ error: "Render Engine belum dikonfigurasi" });
+  const { demo_id: _demoId, ...assetPayload } = req.body || {};
   try {
-    const upstream = await fetch(`${target.replace(/\/$/, "")}/v1/assets`, { method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${key}` }, body: JSON.stringify(req.body ?? {}), signal: AbortSignal.timeout(60000) });
-    const body = await upstream.text(); res.status(upstream.status).setHeader("content-type", upstream.headers.get("content-type") || "application/json"); return res.send(body);
-  } catch { return res.status(502).json({ error: "Render service unavailable" }); }
+    const upstream = await fetch(`${target.base}/v1/assets`, {
+      method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${target.key}`, "x-vyro-demo-id": demoId },
+      body: JSON.stringify(assetPayload), signal: AbortSignal.timeout(60_000)
+    });
+    return relayJson(res, upstream);
+  } catch (error) { return res.status(502).json({ error: "Render Engine tidak tersedia", detail: error?.name === "TimeoutError" ? "timeout" : "connection_failed" }); }
 }

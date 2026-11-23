@@ -1,6 +1,6 @@
 {
   "name": "vyro-media-library-site",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "check:catalog": "python scripts/validate_library.py",
-    "check:js": "node --check assets/js/app.js && node --check assets/js/studio-demo.js && node --check api/v1/intake.js && node --check api/v1/content.js && node --check api/v1/voice.js && node --check api/v1/render.js && node --check api/v1/voice-file.js && node --check api/v1/render-file.js && node --check api/v1/assets.js",
+    "check:js": "node --check assets/js/app.js && node --check assets/js/studio-demo.js && node --check server/api-guard.js && node --check api/v1/intake.js && node --check api/v1/content.js && node --check api/v1/images.js && node --check api/v1/image-file.js && node --check api/v1/voice.js && node --check api/v1/voice-file.js && node --check api/v1/assets.js && node --check api/v1/render.js && node --check api/v1/render-file.js && node --test tests/api-guard.test.mjs",
     "dev:vercel": "vercel dev --listen 3000"
   },
   "devDependencies": {

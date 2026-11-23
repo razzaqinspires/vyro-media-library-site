@@ -1,18 +1,14 @@
-const TARGET = process.env.VYRO_VOICE_API_URL;
-const KEY = process.env.VYRO_VOICE_API_KEY;
-const PATH = "/v1/voice/synthesize";
+import { guardDemo, relayJson, serviceConfig } from "../../server/api-guard.js";
 export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
-  if (!TARGET || !KEY) return res.status(503).json({ error: "Layanan belum dikonfigurasi" });
+  const demoId = guardDemo(req, res, { limit: 8, windowMs: 60_000, bodyLimit: 256 * 1024 });
+  if (!demoId) return;
+  const target = serviceConfig("VYRO_VOICE_API_URL", "VYRO_VOICE_API_KEY");
+  if (!target) return res.status(503).json({ error: "AI Voice Studio belum dikonfigurasi" });
   try {
-    const upstream = await fetch(`${TARGET.replace(/\/$/, "")}${PATH}`, {
-      method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${KEY}` },
-      body: JSON.stringify(req.body ?? {}), signal: AbortSignal.timeout(120000)
+    const upstream = await fetch(`${target.base}/v1/voice/synthesize`, {
+      method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${target.key}` },
+      body: JSON.stringify({ ...(req.body || {}), demo_id: demoId }), signal: AbortSignal.timeout(300_000)
     });
-    const text = await upstream.text();
-    res.status(upstream.status).setHeader("content-type", upstream.headers.get("content-type") || "application/json");
-    return res.send(text);
-  } catch (error) {
-    return res.status(502).json({ error: "Upstream service unavailable", detail: error?.name === "TimeoutError" ? "Request timeout" : "Connection failed" });
-  }
+    return relayJson(res, upstream);
+  } catch (error) { return res.status(502).json({ error: "AI Voice Studio tidak tersedia", detail: error?.name === "TimeoutError" ? "timeout" : "connection_failed" }); }
 }
