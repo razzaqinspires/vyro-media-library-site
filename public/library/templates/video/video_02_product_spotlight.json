@@ -1,0 +1,31 @@
+{
+  "id": "video_02_product_spotlight",
+  "title": "Product Showcase",
+  "description": "Sorot satu produk, satu nilai utama, dan satu ajakan bertindak.",
+  "format": "9:16",
+  "resolution": "720x1280",
+  "duration_seconds": 6,
+  "fps": 24,
+  "audio": "none",
+  "source": "PNG frame sequence + JSON storyboard spec",
+  "storyboard": [
+    {
+      "time": "0–2s",
+      "text": "SHOW THE PRODUCT"
+    },
+    {
+      "time": "2–4s",
+      "text": "TELL THE VALUE"
+    },
+    {
+      "time": "4–6s",
+      "text": "MAKE THE NEXT MOVE"
+    }
+  ],
+  "customize": [
+    "Ganti teks per scene",
+    "Sesuaikan warna dengan brand",
+    "Tambahkan footage asli/berizin",
+    "Tambahkan voice-over dan audio berlisensi saat editing"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "video_03_creator_tips",
+  "title": "Creator Tips",
+  "description": "Template edukasi tiga tahap untuk konten vertikal singkat.",
+  "format": "9:16",
+  "resolution": "720x1280",
+  "duration_seconds": 6,
+  "fps": 24,
+  "audio": "none",
+  "source": "PNG frame sequence + JSON storyboard spec",
+  "storyboard": [
+    {
+      "time": "0–2s",
+      "text": "HOOK"
+    },
+    {
+      "time": "2–4s",
+      "text": "VALUE"
+    },
+    {
+      "time": "4–6s",
+      "text": "ACTION"
+    }
+  ],
+  "customize": [
+    "Ganti teks per scene",
+    "Sesuaikan warna dengan brand",
+    "Tambahkan footage asli/berizin",
+    "Tambahkan voice-over dan audio berlisensi saat editing"
+  ]
+}

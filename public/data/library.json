@@ -1,0 +1,816 @@
+{
+  "brand": "VYRO MEDIA",
+  "handle": "@vyromedia.id",
+  "version": "1.0.0",
+  "last_updated": "2026-11-23",
+  "assets": [
+    {
+      "id": "photo_01_product_spotlight",
+      "title": "Template Foto 01 — Product Spotlight",
+      "category": "Template Foto",
+      "type": "photo",
+      "preview": "/library/templates/photo/photo_01_product_spotlight.png",
+      "download": "/library/templates/photo/photo_01_product_spotlight.png",
+      "description": "Visual feed untuk menonjolkan satu produk, manfaat utama, dan ajakan bertindak.",
+      "tags": [
+        "template",
+        "feed",
+        "1080x1080",
+        "Promosi produk"
+      ],
+      "format": "PNG",
+      "license": "Template orisinal VYRO MEDIA; boleh dikustomisasi untuk kebutuhan konten, tidak boleh dijual ulang sebagai file mentah."
+    },
+    {
+      "id": "photo_02_creator_tips",
+      "title": "Template Foto 02 — Creator Tips",
+      "category": "Template Foto",
+      "type": "photo",
+      "preview": "/library/templates/photo/photo_02_creator_tips.png",
+      "download": "/library/templates/photo/photo_02_creator_tips.png",
+      "description": "Layout edukasi dengan ruang judul besar dan visual figur kreator.",
+      "tags": [
+        "template",
+        "feed",
+        "1080x1080",
+        "Edukasi kreator"
+      ],
+      "format": "PNG",
+      "license": "Template orisinal VYRO MEDIA; boleh dikustomisasi untuk kebutuhan konten, tidak boleh dijual ulang sebagai file mentah."
+    },
+    {
+      "id": "photo_03_trend_alert",
+      "title": "Template Foto 03 — Trend Alert",
+      "category": "Template Foto",
+      "type": "photo",
+      "preview": "/library/templates/photo/photo_03_trend_alert.png",
+      "download": "/library/templates/photo/photo_03_trend_alert.png",
+      "description": "Format editorial untuk membahas tren dengan sumber dan konteks yang jelas.",
+      "tags": [
+        "template",
+        "feed",
+        "1080x1080",
+        "Tren & informasi"
+      ],
+      "format": "PNG",
+      "license": "Template orisinal VYRO MEDIA; boleh dikustomisasi untuk kebutuhan konten, tidak boleh dijual ulang sebagai file mentah."
+    },
+    {
+      "id": "video_01_brand_opener",
+      "title": "Brand opener / identitas pembuka",
+      "category": "Template Video",
+      "type": "video",
+      "preview": "/library/templates/video/video_01_brand_opener_poster.png",
+      "download": "/library/templates/video/video_01_brand_opener.mp4",
+      "description": "Template motion vertikal 6 detik tanpa audio; dilengkapi storyboard JSON untuk pengembangan editing.",
+      "tags": [
+        "template",
+        "reels",
+        "9:16",
+        "mp4"
+      ],
+      "format": "MP4",
+      "license": "Template orisinal VYRO MEDIA; tambahkan footage dan audio berlisensi sebelum dipublikasikan."
+    },
+    {
+      "id": "video_02_product_spotlight",
+      "title": "Product showcase / promosi produk",
+      "category": "Template Video",
+      "type": "video",
+      "preview": "/library/templates/video/video_02_product_spotlight_poster.png",
+      "download": "/library/templates/video/video_02_product_spotlight.mp4",
+      "description": "Template motion vertikal 6 detik tanpa audio; dilengkapi storyboard JSON untuk pengembangan editing.",
+      "tags": [
+        "template",
+        "reels",
+        "9:16",
+        "mp4"
+      ],
+      "format": "MP4",
+      "license": "Template orisinal VYRO MEDIA; tambahkan footage dan audio berlisensi sebelum dipublikasikan."
+    },
+    {
+      "id": "video_03_creator_tips",
+      "title": "Edukasi singkat / tips kreator",
+      "category": "Template Video",
+      "type": "video",
+      "preview": "/library/templates/video/video_03_creator_tips_poster.png",
+      "download": "/library/templates/video/video_03_creator_tips.mp4",
+      "description": "Template motion vertikal 6 detik tanpa audio; dilengkapi storyboard JSON untuk pengembangan editing.",
+      "tags": [
+        "template",
+        "reels",
+        "9:16",
+        "mp4"
+      ],
+      "format": "MP4",
+      "license": "Template orisinal VYRO MEDIA; tambahkan footage dan audio berlisensi sebelum dipublikasikan."
+    },
+    {
+      "id": "brand-01-logo-01-symbol-only-vyro-symbol-black-1080",
+      "title": "VYRO Symbol Black 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_Black_1080.png",
+      "download": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_Black_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-01-symbol-only-vyro-symbol-lime-1080",
+      "title": "VYRO Symbol Lime 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_Lime_1080.png",
+      "download": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_Lime_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-01-symbol-only-vyro-symbol-white-1080",
+      "title": "VYRO Symbol White 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_White_1080.png",
+      "download": "/library/brand-kit/01_Logo/01_Symbol_Only/VYRO_Symbol_White_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-02-full-logo-vyro-full-logo-black-1080",
+      "title": "VYRO Full Logo Black 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_Black_1080.png",
+      "download": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_Black_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-02-full-logo-vyro-full-logo-lime-1080",
+      "title": "VYRO Full Logo Lime 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_Lime_1080.png",
+      "download": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_Lime_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-02-full-logo-vyro-full-logo-white-1080",
+      "title": "VYRO Full Logo White 1080",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_White_1080.png",
+      "download": "/library/brand-kit/01_Logo/02_Full_Logo/VYRO_Full_Logo_White_1080.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-03-transparent-vyro-full-logo-transparent",
+      "title": "VYRO Full Logo Transparent",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/03_Transparent/VYRO_Full_Logo_Transparent.png",
+      "download": "/library/brand-kit/01_Logo/03_Transparent/VYRO_Full_Logo_Transparent.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-01-logo-03-transparent-vyro-symbol-transparent",
+      "title": "VYRO symbol transparent",
+      "category": "Copyright & Logo",
+      "type": "logo",
+      "preview": "/library/brand-kit/01_Logo/03_Transparent/VYRO_symbol_transparent.png",
+      "download": "/library/brand-kit/01_Logo/03_Transparent/VYRO_symbol_transparent.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "copyright & logo"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-02-profile-name-bio-vyro-profile-concept-01-main-brand",
+      "title": "VYRO Profile Concept 01 Main Brand",
+      "category": "Profil & Bio",
+      "type": "design",
+      "preview": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_01_Main_Brand.png",
+      "download": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_01_Main_Brand.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "profil & bio"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-02-profile-name-bio-vyro-profile-concept-02-trend-media",
+      "title": "VYRO Profile Concept 02 Trend Media",
+      "category": "Profil & Bio",
+      "type": "design",
+      "preview": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_02_Trend_Media.png",
+      "download": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_02_Trend_Media.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "profil & bio"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-02-profile-name-bio-vyro-profile-concept-03-creator-network",
+      "title": "VYRO Profile Concept 03 Creator Network",
+      "category": "Profil & Bio",
+      "type": "design",
+      "preview": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_03_Creator_Network.png",
+      "download": "/library/brand-kit/02_Profile_Name_Bio/VYRO_Profile_Concept_03_Creator_Network.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "profil & bio"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-01-plain-vyro-square-background-black",
+      "title": "VYRO Square Background Black",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_Black.png",
+      "download": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_Black.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-01-plain-vyro-square-background-lime",
+      "title": "VYRO Square Background Lime",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_Lime.png",
+      "download": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_Lime.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-01-plain-vyro-square-background-white",
+      "title": "VYRO Square Background White",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_White.png",
+      "download": "/library/brand-kit/03_Banners/01_Plain/VYRO_Square_Background_White.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-02-with-name-vyro-banner-01-name-main",
+      "title": "VYRO Banner 01 Name Main",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_01_Name_Main.png",
+      "download": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_01_Name_Main.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-02-with-name-vyro-banner-02-name-descriptor",
+      "title": "VYRO Banner 02 Name Descriptor",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_02_Name_Descriptor.png",
+      "download": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_02_Name_Descriptor.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-02-with-name-vyro-banner-03-name-positioning",
+      "title": "VYRO Banner 03 Name Positioning",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_03_Name_Positioning.png",
+      "download": "/library/brand-kit/03_Banners/02_With_Name/VYRO_Banner_03_Name_Positioning.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-03-with-information-vyro-banner-info-01-content-production",
+      "title": "VYRO Banner Info 01 Content Production",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_01_Content_Production.png",
+      "download": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_01_Content_Production.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-03-with-information-vyro-banner-info-02-creator-network",
+      "title": "VYRO Banner Info 02 Creator Network",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_02_Creator_Network.png",
+      "download": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_02_Creator_Network.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-03-banners-03-with-information-vyro-banner-info-03-promotion-campaigns",
+      "title": "VYRO Banner Info 03 Promotion Campaigns",
+      "category": "Banner & Desain",
+      "type": "design",
+      "preview": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_03_Promotion_Campaigns.png",
+      "download": "/library/brand-kit/03_Banners/03_With_Information/VYRO_Banner_Info_03_Promotion_Campaigns.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "banner & desain"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-01-services",
+      "title": "01-services",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/01-services.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/01-services.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-02-project",
+      "title": "02-project",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/02-project.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/02-project.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-03-talent",
+      "title": "03-talent",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/03-talent.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/03-talent.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-04-collab",
+      "title": "04-collab",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/04-collab.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/04-collab.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-05-pricing",
+      "title": "05-pricing",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/05-pricing.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/05-pricing.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-06-order",
+      "title": "06-order",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/06-order.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/06-order.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-07-portfolio",
+      "title": "07-portfolio",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/07-portfolio.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/07-portfolio.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-08-testimoni",
+      "title": "08-testimoni",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/08-testimoni.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/08-testimoni.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-09-tips-edukasi",
+      "title": "09-tips-edukasi",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/09-tips-edukasi.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/09-tips-edukasi.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-10-challenge",
+      "title": "10-challenge",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/10-challenge.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/10-challenge.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-11-news-tren",
+      "title": "11-news-tren",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/11-news-tren.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/11-news-tren.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "brand-04-instagram-highlights-12-faq",
+      "title": "12-faq",
+      "category": "Instagram Highlights",
+      "type": "design",
+      "preview": "/library/brand-kit/04_Instagram_Highlights/12-faq.png",
+      "download": "/library/brand-kit/04_Instagram_Highlights/12-faq.png",
+      "description": "Aset dari brand kit VYRO MEDIA yang sudah dibuat sebelumnya.",
+      "tags": [
+        "brand-kit",
+        "instagram highlights"
+      ],
+      "format": "PNG",
+      "license": "VYRO MEDIA internal brand asset"
+    },
+    {
+      "id": "doc-04-instagram-highlights-readme",
+      "title": "README",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/04_Instagram_Highlights/README.txt",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "TXT",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-05-documentation-asset-catalog",
+      "title": "ASSET CATALOG",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/05_Documentation/ASSET_CATALOG.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-05-documentation-design-system-and-usage",
+      "title": "DESIGN SYSTEM AND USAGE",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/05_Documentation/DESIGN_SYSTEM_AND_USAGE.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-05-documentation-file-inventory",
+      "title": "FILE INVENTORY",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/05_Documentation/FILE_INVENTORY.csv",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "CSV",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-05-documentation-production-notes",
+      "title": "PRODUCTION NOTES",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/05_Documentation/PRODUCTION_NOTES.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-05-documentation-profile-names-bios-and-copy",
+      "title": "PROFILE NAMES BIOS AND COPY",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/05_Documentation/PROFILE_NAMES_BIOS_AND_COPY.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-changelog",
+      "title": "CHANGELOG",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/CHANGELOG.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "doc-readme",
+      "title": "README",
+      "category": "Dokumentasi",
+      "type": "document",
+      "preview": "/library/hero/library-hero.svg",
+      "download": "/library/brand-kit/README.md",
+      "description": "Dokumentasi referensi identitas visual dan tata kelola aset VYRO MEDIA.",
+      "tags": [
+        "documentation",
+        "brand-guide"
+      ],
+      "format": "MD",
+      "license": "Dokumen internal VYRO MEDIA; jangan diubah tanpa memperbarui versi dan changelog."
+    },
+    {
+      "id": "brand-preview-01-logo-variants-preview",
+      "title": "01 LOGO VARIANTS PREVIEW",
+      "category": "Dokumentasi Visual",
+      "type": "design",
+      "preview": "/library/brand-kit/06_Preview/01_LOGO_VARIANTS_PREVIEW.png",
+      "download": "/library/brand-kit/06_Preview/01_LOGO_VARIANTS_PREVIEW.png",
+      "description": "Lembar pratinjau visual dari brand kit VYRO MEDIA; gunakan sebagai referensi, bukan sebagai logo master individual.",
+      "tags": [
+        "brand-kit",
+        "preview",
+        "documentation"
+      ],
+      "format": "PNG",
+      "license": "Dokumentasi internal VYRO MEDIA; tidak untuk dijual ulang."
+    },
+    {
+      "id": "brand-preview-02-profile-name-bio-preview",
+      "title": "02 PROFILE NAME BIO PREVIEW",
+      "category": "Dokumentasi Visual",
+      "type": "design",
+      "preview": "/library/brand-kit/06_Preview/02_PROFILE_NAME_BIO_PREVIEW.png",
+      "download": "/library/brand-kit/06_Preview/02_PROFILE_NAME_BIO_PREVIEW.png",
+      "description": "Lembar pratinjau visual dari brand kit VYRO MEDIA; gunakan sebagai referensi, bukan sebagai logo master individual.",
+      "tags": [
+        "brand-kit",
+        "preview",
+        "documentation"
+      ],
+      "format": "PNG",
+      "license": "Dokumentasi internal VYRO MEDIA; tidak untuk dijual ulang."
+    },
+    {
+      "id": "brand-preview-03-square-banners-preview",
+      "title": "03 SQUARE BANNERS PREVIEW",
+      "category": "Dokumentasi Visual",
+      "type": "design",
+      "preview": "/library/brand-kit/06_Preview/03_SQUARE_BANNERS_PREVIEW.png",
+      "download": "/library/brand-kit/06_Preview/03_SQUARE_BANNERS_PREVIEW.png",
+      "description": "Lembar pratinjau visual dari brand kit VYRO MEDIA; gunakan sebagai referensi, bukan sebagai logo master individual.",
+      "tags": [
+        "brand-kit",
+        "preview",
+        "documentation"
+      ],
+      "format": "PNG",
+      "license": "Dokumentasi internal VYRO MEDIA; tidak untuk dijual ulang."
+    },
+    {
+      "id": "brand-preview-vyro-media-complete-brand-overview",
+      "title": "VYRO MEDIA COMPLETE BRAND OVERVIEW",
+      "category": "Dokumentasi Visual",
+      "type": "design",
+      "preview": "/library/brand-kit/06_Preview/VYRO_MEDIA_COMPLETE_BRAND_OVERVIEW.jpg",
+      "download": "/library/brand-kit/06_Preview/VYRO_MEDIA_COMPLETE_BRAND_OVERVIEW.jpg",
+      "description": "Lembar pratinjau visual dari brand kit VYRO MEDIA; gunakan sebagai referensi, bukan sebagai logo master individual.",
+      "tags": [
+        "brand-kit",
+        "preview",
+        "documentation"
+      ],
+      "format": "JPG",
+      "license": "Dokumentasi internal VYRO MEDIA; tidak untuk dijual ulang."
+    }
+  ],
+  "categories": [
+    {
+      "id": "templates",
+      "name": "Template Visual Konten",
+      "description": "Template foto dan video yang ditampilkan paling atas."
+    },
+    {
+      "id": "copyright",
+      "name": "Copyright & Logo",
+      "description": "Variasi simbol, full logo, dan master transparan VYRO MEDIA."
+    },
+    {
+      "id": "video",
+      "name": "Video & Reels",
+      "description": "Video template dan aset video yang tersedia."
+    },
+    {
+      "id": "photo",
+      "name": "Foto & Gambar",
+      "description": "Template foto, visual, dan gambar yang tersedia."
+    },
+    {
+      "id": "design",
+      "name": "Banner & Desain",
+      "description": "Banner, konsep profil, dan desain sosial media."
+    },
+    {
+      "id": "highlights",
+      "name": "Instagram Highlights",
+      "description": "Cover sorotan Instagram."
+    },
+    {
+      "id": "docs",
+      "name": "Dokumentasi",
+      "description": "Panduan identitas, katalog, dan catatan produksi."
+    },
+    {
+      "id": "other",
+      "name": "Aset Lainnya",
+      "description": "Audio, motion, font, ikon, dan aset lain akan ditambahkan setelah tersedia."
+    }
+  ]
+}
