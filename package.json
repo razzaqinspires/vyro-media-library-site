@@ -1,13 +1,15 @@
 {
   "name": "vyro-media-library-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "check:catalog": "python scripts/validate_library.py"
+    "check:catalog": "python scripts/validate_library.py",
+    "check:js": "node --check assets/js/app.js && node --check assets/js/studio-demo.js && node --check api/v1/intake.js && node --check api/v1/content.js && node --check api/v1/voice.js && node --check api/v1/render.js && node --check api/v1/voice-file.js && node --check api/v1/render-file.js && node --check api/v1/assets.js",
+    "dev:vercel": "vercel dev --listen 3000"
   },
   "devDependencies": {
     "vite": "^8.3.8"

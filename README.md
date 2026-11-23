@@ -1,67 +1,47 @@
-# VYRO MEDIA — Creative Media Library
+# VYRO MEDIA — Creative Media Library & Prime Studio
 
-A responsive, searchable media-library website for VYRO MEDIA (`@vyromedia.id`). The first visible content section is **Template Visual Konten**, with three square photo templates and three vertical MP4 video templates. The homepage then surfaces the official **Copyright & Logo** collection and the wider library catalog.
+**Version:** 2.0.0  
+**Purpose:** public creative library and browser-based experimental project workspace.
 
-## Features
+## Included
+- Template-first media library and official VYRO brand assets.
+- Demo session ID, IndexedDB drafts, local media uploads, and project-level asset permissions.
+- Photo editor: brightness, contrast, saturation, text overlay, PNG export.
+- Video editor: local preview, trim range, text overlay, experimental WebM export.
+- API proxies to separate Script Intake, Content Engine, Voice Studio, and Render Engine services.
 
-- Template-first homepage: 3 photo templates (1:1) and 3 video templates (9:16).
-- Official brand library imported from VYRO MEDIA Brand Kit v1.0: logo symbol variants, full logo lockups, transparent masters, profile concepts, square banners, 12 Instagram highlight covers, and brand documentation.
-- Search, category filters, type filters, sort, asset details, direct download, responsive layouts, and shareable file links.
-- Asset inventory generated from actual files in `public/library/` and maintained in `public/data/library.json`.
-- Upcoming empty categories (Motion & Overlay, Audio & Voice, Fonts, Icons) are explicitly marked as coming soon; no inventory counts are invented.
-- No fictional library counts, customer testimonials, or client portfolio claims.
+## Component boundaries
+The website repository contains only the front end and thin API proxies. AI model code, voice model weights, FFmpeg rendering implementation, Instagram publishing, and scheduler logic remain in their own repositories. The website does not call the Instagram Publisher or Publishing Scheduler.
 
-## Run locally
+## Demo mode
+No Google login or account system is enabled. A browser-local demo ID is generated. Draft metadata and uploaded blobs are stored in IndexedDB, with the ID in localStorage. Data is local to that browser profile and is not synced to another device. It may be lost when browser storage is cleared.
 
-Requirements: Node.js 20.19+ or 22.12+ and npm. Vite 8 uses the current supported Node runtime ranges.
+## Run
+Requirements: Node.js 20.19+ or 22.12+ and npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. For a production build:
+Browser-local editing and drafts work in Vite. To exercise `/api/v1/*` service proxies locally, install the Vercel CLI (`npm install -g vercel`) and run `npm run dev:vercel`; Vite alone does not execute Vercel serverless functions.
+
+Build and checks:
 
 ```bash
+npm run check:catalog
+npm run check:js
 npm run build
-npm run preview
 ```
 
-## Deployment
+## Server-side API environment
+Copy `.env.example` to the Vercel project environment. Set the four service base URLs and corresponding API keys. Keep all API keys server-side; never expose them through `VITE_` variables. Service URLs must be HTTPS in production.
 
-The site is a static Vite build and can be deployed to Vercel, Netlify, Cloudflare Pages, or any static host. Build command: `npm run build`; output directory: `dist`. Update `public/robots.txt` and `public/sitemap.xml` with the real domain before production.
+## Editing limitations
+The browser photo editor exports PNG. The browser video editor exports WebM when MediaRecorder is available and is experimental; browser/device codecs vary. Final MP4 production must use `vyro-video-render-engine`. Selected project images and generated WAV audio can be forwarded through the Vercel proxy (3 MB per file in the demo UI). Render requests are rejected unless `review_approved=true`.
 
-## Library maintenance
+## Asset permissions
+The current project access toggles are browser-local demo permissions. They do not grant access to another user. Multi-user collaboration, Google OAuth, server-side draft persistence, private object storage, and admin upload are future backend capabilities.
 
-1. Place new media under `public/library/<category>/`.
-2. Add a matching object to `public/data/library.json` (id, title, category, type, preview, download, description, tags, format, license).
-3. Run `npm run check:catalog`.
-4. Run `npm run build`, inspect the mobile and desktop views, then commit.
-
-The current site is a public, read-only catalog. It does **not** yet provide authenticated uploads, cloud storage, user accounts, payment, private collections, or an admin panel. Implement those through a backend and object storage before enabling public upload.
-
-## Asset formats
-
-- Photo templates: PNG, 1080 × 1080.
-- Video templates: MP4, 720 × 1280, 24 fps, 6 seconds, no audio; each has a poster and storyboard JSON. These are starter motion templates, not editable NLE project files.
-- Existing social artwork: primarily PNG, 1080 × 1080.
-
-## Brand system
-
-- Black: `#050709`
-- White: `#F7F9F6`
-- Neon lime: `#B8FF00`
-- Dark surface: `#0D1116`
-- Neutral gray: `#5A6267`
-- Font: Inter; system sans-serif fallback.
-
-## Copyright and usage
-
-The logo and brand-kit files are displayed as VYRO MEDIA identity assets. The template files are original starter designs made for this library. Do not sell the raw assets as a standalone stock pack or imply that third-party stock footage, fonts, music, or other licenses are included. Obtain separate rights for any external photos, music, talent, or client materials added later. No trademark clearance or registration status is implied.
-
-## Known limitations
-
-- `public/data/library.json` is a static manifest; editing the library requires a code/content update and redeployment.
-- Search and filters run in the browser.
-- No server-side analytics or download tracking is configured.
-- The social link is set to `https://instagram.com/vyromedia.id`.
+## Publisher boundary
+Instagram publishing is intentionally not embedded in the website. `vyro-instagram-publisher` and `vyro-publishing-scheduler` remain operator/internal components with their own approval and credential requirements.

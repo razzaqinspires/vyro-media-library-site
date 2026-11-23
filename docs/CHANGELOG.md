@@ -1,9 +1,10 @@
 # Changelog
 
-## 1.0.0 — 2026-11-23
-- Created VYRO MEDIA static media-library website.
-- Featured the 3 photo + 3 video templates at the top of the home page.
-- Imported the existing VYRO brand kit (logo variants, profile concepts, banners, highlight covers, documentation).
-- Added search, filters, sorting, asset details, and direct downloads.
-- Added 3 new square PNG photo templates and 3 short vertical MP4 motion templates with storyboard JSON.
-- Added responsive UI and Vite build setup.
+## 2.0.0 — 2026-11-23
+- Added browser-local demo identity and IndexedDB project drafts.
+- Added per-project library asset permission toggles and local media uploads.
+- Added experimental photo editor (canvas filters, text overlay, PNG export).
+- Added experimental vertical video editor (trim, overlay, WebM export).
+- Added thin Vercel API proxies for Script Intake, Content Engine, Voice Studio, and Render Engine.
+- Kept Instagram Publisher and Publishing Scheduler out of the public website.
+- Added architecture and deployment contracts.
